@@ -9,7 +9,7 @@ package tp2;
  *
  * @author Usuario
  */
-public class TP2 {
+public class TestMain {
 
     /**
      * @param args the command line arguments
