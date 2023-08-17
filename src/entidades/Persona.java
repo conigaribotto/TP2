@@ -31,6 +31,10 @@ public class Persona {
         reloj.getHora();
     }
 
+    public Reloj getReloj() {
+        return reloj;
+    }
+
     public void hablar() {
         System.out.println("Hola!");
     }
