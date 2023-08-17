@@ -39,11 +39,7 @@ public class Reloj {
 
     @Override
     public String toString() {
-        return "Reloj" + "dia=" + dia + ", hora=" + hora + ", modelo=" + modelo + ", numSerie=" + numSerie + '}';
-    }
-
-    public String getX() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "Reloj: " + "dia=" + dia + ", hora=" + hora + ", modelo=" + modelo + ", numSerie=" + numSerie + '}';
     }
     
 }

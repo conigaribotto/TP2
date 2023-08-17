@@ -7,32 +7,40 @@ public class Persona {
     private double altura;
     private Reloj reloj;
 
-    public Persona(String nombre, String apellido, int edad, double altura, Reloj reloj) {
+    public Reloj getReloj() {
+        return reloj;
+    }
+
+    public void setReloj(Reloj reloj) {
+        this.reloj = reloj;
+    }
+
+    public Persona(String nombre, String apellido, int edad, double altura, RelojFit relojFit) {
         this.nombre=nombre;
         this.apellido=apellido;
         this.edad=edad;
-        this.altura=altura;
-        this.reloj=reloj;
+       // this.altura=altura;
+        this.reloj=relojFit;
     }
 
     public String getNombre() {
         return nombre+" "+apellido;
     }
-
     public int getEdad() {
         return edad;
     }
-
     public void setEdad(int edad) {
         this.edad=edad;
     }
 
-    public void decirHora() {
-        reloj.getHora();
+    public String decirHora() {
+        return getReloj().getHora();
     }
 
-    public Reloj getReloj() {
-        return reloj;
+    public void decirCoorenada() {
+        
+        System.out.println("Coordenadas del reloj Fit:");
+        //System.out.println("x=" + reloj.getX());
     }
 
     public void hablar() {
